@@ -1,0 +1,34 @@
+.book {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  img {
+    width: 200px;
+    will-change: transform;
+    transition: transform 300ms ease-in-out;
+  }
+  .image-background {
+    background-color: white;
+    background: radial-gradient(white, rgba(255, 255, 255, 0.884));
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+  }
+  h2{
+    font-weight: 300;
+  }
+}
+.book:hover img {
+  transform: scale(1.2);
+}
+
+
+@media (prefers-color-scheme: light) {
+   .book .image-background {
+    background: radial-gradient(rgb(44, 44, 44), rgba(204, 193, 193, 0.884));
+   }
+  }
