@@ -1,24 +1,25 @@
-section.topicMenu{
-    background-color: red;
-    height: 100%;
-    width: 100%;
+section.topicMenu {
+  /* background-color: red; */
+  height: 100%;
+  width: 100%;
 }
 
-.topic{
-    background-color: #e3e3e3;
-    color: #242424;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    will-change: transform;
-    transition: transform ease-in-out 300ms;
-    display: flex;
-    justify-content: space-between;
-    .name{
-        font-weight: bold;
-    }
+.topic {
+  background-color: #e3e3e3;
+  color: #242424;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  will-change: transform;
+  transition: transform ease-in-out 300ms;
+  display: flex;
+  justify-content: space-between;
+  .name {
+    font-weight: bold;
+  }
 }
 
-.topic:hover{
-    transform: scale(1.05);
+.topic:hover {
+  transform: scale(1.05);
 }
+
