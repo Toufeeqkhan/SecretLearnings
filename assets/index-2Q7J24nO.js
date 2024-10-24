@@ -8,6 +8,6 @@
         <p class="lecture">${this.lecture}</p>
         <p class="name">${this.name}</p>
         <p class="date">${this.date}</p>
-        `}}class L{constructor(){this.element=document.createElement("section"),this.render()}render(){this.element.classList.add("topicMenu");const t=new l("Lecture 1","Algorithm, FlowChart & Program","22/10/24"),r=new l("Lecture 2","Program & Languages","23/10/24");t.element.addEventListener("click",()=>{c.innerHTML="",c.appendChild(f.element)}),this.element.appendChild(t.element),this.element.appendChild(r.element)}}const v=new L,c=document.createElement("main");c.appendChild(o.element);o.element.addEventListener("click",()=>{c.innerHTML="",c.appendChild(v.element)});class y{constructor(){this.element=document.createElement("nav"),this.render()}render(){this.element.innerHTML=`
+        `}}class L{constructor(){this.element=document.createElement("section"),this.render()}render(){this.element.classList.add("topicMenu");const t=new l("Lecture 1","A, F & Program","22/10/24"),r=new l("Lecture 2","Program & Languages","23/10/24");t.element.addEventListener("click",()=>{c.innerHTML="",c.appendChild(f.element)}),this.element.appendChild(t.element),this.element.appendChild(r.element)}}const v=new L,c=document.createElement("main");c.appendChild(o.element);o.element.addEventListener("click",()=>{c.innerHTML="",c.appendChild(v.element)});class y{constructor(){this.element=document.createElement("nav"),this.render()}render(){this.element.innerHTML=`
         <h2 class="">Secret Learnings<h2>
-        `}}const w=new y,m=document.querySelector("#app");m.appendChild(w.element);m.appendChild(c);
+        `}}const E=new y,m=document.querySelector("#app");m.appendChild(E.element);m.appendChild(c);
