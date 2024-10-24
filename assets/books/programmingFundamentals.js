@@ -26,7 +26,7 @@ class Topic{
     }
     render(){
         this.element.classList.add('topicMenu')
-        const lecture1 = new Topic('Lecture 1','Algorithm, FlowChart & Program','22/10/24')
+        const lecture1 = new Topic('Lecture 1','A, F & Program','22/10/24')
         const lecture2 = new Topic('Lecture 2','Program & Languages','23/10/24')
         lecture1.element.addEventListener('click',()=>{
             screen.innerHTML=''
