@@ -16,10 +16,10 @@ section.lecture{
       font-size: 3rem;
     }
     p{
-        width: 90%;
+        /* width: 90%; */
         padding-top: 1rem;
         padding-bottom: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         
     }
     code{
@@ -31,11 +31,15 @@ section.lecture{
     ul{
         list-style: none;
         letter-spacing: 0px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       padding: 0;
     }
     .question{
         padding: 2rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
   
   }
