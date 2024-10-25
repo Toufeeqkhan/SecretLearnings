@@ -17,9 +17,6 @@ render(){
       instructions.
       </p>
       </div>
-
-      <div class="question"></div>
-      
       <div class="question">
       <h2>Okay, Examples?🤔</h2>
       <p>Here are the examples of computer:</p>
@@ -90,14 +87,11 @@ render(){
         <img src=${images.lecture1FlowCharToAddTwoNumbersImage} alt="FlowChart to add two numbers">
         <p>And here is the program to write the program for the same purpose in python.</p>
         <code>
-        <p># Step 1: Input first number as P</p>
         <p>P = float(input("Enter first number (P): "))</p>
-        <p># Step 2: Input second number as Q</p>
         <p>Q = float(input("Enter second number (Q): "))</p>
-        <p># Step 3: Set Sum = P + Q</p>
         <p>Sum = P + Q</p>
         <p>print("The sum is:", Sum)</p>
-        <p># Step 5: End</p>
+
         </code>
         </div>
         

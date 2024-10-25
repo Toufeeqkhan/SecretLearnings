@@ -44,3 +44,6 @@ section.lecture{
   
   }
   
+  *{
+    outline:1px solid red;
+  }
