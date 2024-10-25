@@ -1,8 +1,8 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const r of e)if(r.type==="childList")for(const a of r.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&i(a)}).observe(document,{childList:!0,subtree:!0});function n(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?r.credentials="include":e.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function i(e){if(e.ep)return;e.ep=!0;const r=n(e);fetch(e.href,r)}})();class d{constructor(t,n,i){this.name=t,this.imgSrc=n,this.imgAlt=i,this.element=document.createElement("div"),this.render(),this.element.classList.add("book")}render(){this.element.innerHTML=`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const r of e)if(r.type==="childList")for(const a of r.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&s(a)}).observe(document,{childList:!0,subtree:!0});function i(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?r.credentials="include":e.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function s(e){if(e.ep)return;e.ep=!0;const r=i(e);fetch(e.href,r)}})();class p{constructor(t,i,s){this.name=t,this.imgSrc=i,this.imgAlt=s,this.element=document.createElement("div"),this.render(),this.element.classList.add("book")}render(){this.element.innerHTML=`
         <div class="image-background"></div>
         <img src=${this.imgSrc} alt=${this.imgAlt}/>
         <h2>${this.name}</h2>
-        `}}const h="./images/programming.png",u="./images/computer.png",g="./images/lecture1Flowchart.png",l={programmingFundamentalsImage:h,lecture1ComputerImage:u,lecture1FlowCharToAddTwoNumbersImage:g};class f{constructor(){this.element=document.createElement("div"),this.render()}render(){const t=new d("Programming Fundamentals",l.programmingFundamentalsImage,"programmingFundamentals");this.element.appendChild(t.element)}}const m=new f;class w{constructor(){this.element=document.createElement("div"),this.render()}render(){this.element.innerHTML=`
+        `}}const d="./images/programming.png",u="./images/computer.png",g="./images/lecture1Flowchart.png",l={programmingFundamentalsImage:d,lecture1ComputerImage:u,lecture1FlowCharToAddTwoNumbersImage:g};class f{constructor(){this.element=document.createElement("div"),this.render()}render(){const t=new p("Programming Fundamentals",l.programmingFundamentalsImage,"programmingFundamentals");this.element.appendChild(t.element)}}const m=new f;class w{constructor(){this.element=document.createElement("div"),this.render()}render(){this.element.innerHTML=`
     <section class="lecture">
       <h1>Computer</h1>
       <img class="computer-img" src="${l.lecture1ComputerImage}" alt="Computer" />
@@ -13,9 +13,6 @@
       instructions.
       </p>
       </div>
-
-      <div class="question"></div>
-      
       <div class="question">
       <h2>Okay, Examples?🤔</h2>
       <p>Here are the examples of computer:</p>
@@ -86,23 +83,20 @@
         <img src=${l.lecture1FlowCharToAddTwoNumbersImage} alt="FlowChart to add two numbers">
         <p>And here is the program to write the program for the same purpose in python.</p>
         <code>
-        <p># Step 1: Input first number as P</p>
         <p>P = float(input("Enter first number (P): "))</p>
-        <p># Step 2: Input second number as Q</p>
         <p>Q = float(input("Enter second number (Q): "))</p>
-        <p># Step 3: Set Sum = P + Q</p>
         <p>Sum = P + Q</p>
         <p>print("The sum is:", Sum)</p>
-        <p># Step 5: End</p>
+
         </code>
         </div>
         
       <p class="note">You don't need to master them all specifically the code part that would be done in latter class for now take the concept only</p>
     </section>
-    `}}const v=new w;class c{constructor(t,n,i){this.element=document.createElement("div"),this.name=n,this.lecture=t,this.date=i,this.element.classList.add("topic"),this.render()}render(){this.element.innerHTML=`
+    `}}const v=new w;class c{constructor(t,i,s){this.element=document.createElement("div"),this.name=i,this.lecture=t,this.date=s,this.element.classList.add("topic"),this.render()}render(){this.element.innerHTML=`
         <p class="lecture">${this.lecture}</p>
         <p class="name">${this.name}</p>
         <p class="date">${this.date}</p>
-        `}}class S{constructor(){this.element=document.createElement("section"),this.render()}render(){this.element.classList.add("topicMenu");const t=new c("Lecture 1","A, F & Program","22/10/24"),n=new c("Lecture 2","Program & Languages","23/10/24");t.element.addEventListener("click",()=>{o.innerHTML="",o.appendChild(v.element)}),this.element.appendChild(t.element),this.element.appendChild(n.element)}}const b=new S,o=document.createElement("main");o.appendChild(m.element);m.element.addEventListener("click",()=>{o.innerHTML="",o.appendChild(b.element)});class y{constructor(){this.element=document.createElement("nav"),this.render()}render(){this.element.innerHTML=`
+        `}}class y{constructor(){this.element=document.createElement("section"),this.render()}render(){this.element.classList.add("topicMenu");const t=new c("Lecture 1","A, F & Program","22/10/24"),i=new c("Lecture 2","Program & Languages","23/10/24");t.element.addEventListener("click",()=>{o.innerHTML="",o.appendChild(v.element)}),this.element.appendChild(t.element),this.element.appendChild(i.element)}}const b=new y,o=document.createElement("main");o.appendChild(m.element);m.element.addEventListener("click",()=>{o.innerHTML="",o.appendChild(b.element)});class L{constructor(){this.element=document.createElement("nav"),this.render()}render(){this.element.innerHTML=`
         <h2 class="">Secret Learnings<h2>
-        `}}const L=new y,p=document.querySelector("#app");p.appendChild(L.element);p.appendChild(o);
+        `}}const S=new L,h=document.querySelector("#app");h.appendChild(S.element);h.appendChild(o);
