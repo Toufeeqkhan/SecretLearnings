@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const r of e)if(r.type==="childList")for(const a of r.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&s(a)}).observe(document,{childList:!0,subtree:!0});function i(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?r.credentials="include":e.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function s(e){if(e.ep)return;e.ep=!0;const r=i(e);fetch(e.href,r)}})();class p{constructor(t,i,s){this.name=t,this.imgSrc=i,this.imgAlt=s,this.element=document.createElement("div"),this.render(),this.element.classList.add("book")}render(){this.element.innerHTML=`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const r of e)if(r.type==="childList")for(const a of r.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&s(a)}).observe(document,{childList:!0,subtree:!0});function n(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?r.credentials="include":e.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function s(e){if(e.ep)return;e.ep=!0;const r=n(e);fetch(e.href,r)}})();class p{constructor(t,n,s){this.name=t,this.imgSrc=n,this.imgAlt=s,this.element=document.createElement("div"),this.render(),this.element.classList.add("book")}render(){this.element.innerHTML=`
         <div class="image-background"></div>
         <img src=${this.imgSrc} alt=${this.imgAlt}/>
         <h2>${this.name}</h2>
@@ -12,6 +12,7 @@
       A computer is a versatile electronic device that performs tasks based on
       instructions.
       </p>
+      <button><a href="https://www.youtube.com/watch?v=Cu3R5it4cQs&t=26s&ab_channel=LearnFree">Video on computer</a></button>
       </div>
       <div class="question">
       <h2>Okay, Examples?🤔</h2>
@@ -93,10 +94,10 @@
         
       <p class="note">You don't need to master them all specifically the code part that would be done in latter class for now take the concept only</p>
     </section>
-    `}}const v=new w;class c{constructor(t,i,s){this.element=document.createElement("div"),this.name=i,this.lecture=t,this.date=s,this.element.classList.add("topic"),this.render()}render(){this.element.innerHTML=`
+    `}}const v=new w;class c{constructor(t,n,s){this.element=document.createElement("div"),this.name=n,this.lecture=t,this.date=s,this.element.classList.add("topic"),this.render()}render(){this.element.innerHTML=`
         <p class="lecture">${this.lecture}</p>
         <p class="name">${this.name}</p>
         <p class="date">${this.date}</p>
-        `}}class y{constructor(){this.element=document.createElement("section"),this.render()}render(){this.element.classList.add("topicMenu");const t=new c("Lecture 1","A, F & Program","22/10/24"),i=new c("Lecture 2","Program & Languages","23/10/24");t.element.addEventListener("click",()=>{o.innerHTML="",o.appendChild(v.element)}),this.element.appendChild(t.element),this.element.appendChild(i.element)}}const b=new y,o=document.createElement("main");o.appendChild(m.element);m.element.addEventListener("click",()=>{o.innerHTML="",o.appendChild(b.element)});class L{constructor(){this.element=document.createElement("nav"),this.render()}render(){this.element.innerHTML=`
+        `}}class b{constructor(){this.element=document.createElement("section"),this.render()}render(){this.element.classList.add("topicMenu");const t=new c("Lecture 1","A, F & Program","22/10/24"),n=new c("Lecture 2","Program & Languages","23/10/24");t.element.addEventListener("click",()=>{o.innerHTML="",o.appendChild(v.element)}),this.element.appendChild(t.element),this.element.appendChild(n.element)}}const y=new b,o=document.createElement("main");o.appendChild(m.element);m.element.addEventListener("click",()=>{o.innerHTML="",o.appendChild(y.element)});class L{constructor(){this.element=document.createElement("nav"),this.render()}render(){this.element.innerHTML=`
         <h2 class="">Secret Learnings<h2>
         `}}const S=new L,h=document.querySelector("#app");h.appendChild(S.element);h.appendChild(o);
