@@ -13,7 +13,6 @@
       instructions.
       </p>
       <button><a href="https://www.youtube.com/watch?v=Cu3R5it4cQs&t=26s&ab_channel=LearnFree">Video on computer</a></button>
-      <button><a href="https://www.youtube.com/watch?v=kM9ASKAni_s&t=77s">Video on Algorithm/Program</a></button>
       </div>
       <div class="question">
       <h2>Okay, Examples?🤔</h2>
@@ -61,6 +60,7 @@
       <li>FlowChart</li>
       <li>Program</li>
       </ul>
+      <button><a href="https://www.youtube.com/watch?v=kM9ASKAni_s&t=77s">Video on Algorithm/Program</a></button>
       <p>
       Algorithms are the blueprints. Flowcharts are the sketches. Programs are
       the actual buildings.
