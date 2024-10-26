@@ -2,7 +2,7 @@
         <div class="image-background"></div>
         <img src=${this.imgSrc} alt=${this.imgAlt}/>
         <h2>${this.name}</h2>
-        `}}const d="./images/programming.png",u="./images/computer.png",g="./images/lecture1Flowchart.png",l={programmingFundamentalsImage:d,lecture1ComputerImage:u,lecture1FlowCharToAddTwoNumbersImage:g};class f{constructor(){this.element=document.createElement("div"),this.render()}render(){const t=new p("Programming Fundamentals",l.programmingFundamentalsImage,"programmingFundamentals");this.element.appendChild(t.element)}}const m=new f;class w{constructor(){this.element=document.createElement("div"),this.render()}render(){this.element.innerHTML=`
+        `}}const u="./images/programming.png",d="./images/computer.png",g="./images/lecture1Flowchart.png",l={programmingFundamentalsImage:u,lecture1ComputerImage:d,lecture1FlowCharToAddTwoNumbersImage:g};class f{constructor(){this.element=document.createElement("div"),this.render()}render(){const t=new p("Programming Fundamentals",l.programmingFundamentalsImage,"programmingFundamentals");this.element.appendChild(t.element)}}const m=new f;class w{constructor(){this.element=document.createElement("div"),this.render()}render(){this.element.innerHTML=`
     <section class="lecture">
       <h1>Computer</h1>
       <img class="computer-img" src="${l.lecture1ComputerImage}" alt="Computer" />
@@ -13,6 +13,7 @@
       instructions.
       </p>
       <button><a href="https://www.youtube.com/watch?v=Cu3R5it4cQs&t=26s&ab_channel=LearnFree">Video on computer</a></button>
+      <button><a href="https://www.youtube.com/watch?v=kM9ASKAni_s&t=77s">Video on Algorithm/Program</a></button>
       </div>
       <div class="question">
       <h2>Okay, Examples?🤔</h2>
